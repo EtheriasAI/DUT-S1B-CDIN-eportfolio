@@ -1,0 +1,188 @@
+body
+{
+	background-image:url("images/fond.png");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	font-size: 2vmin;
+}
+
+header
+{	
+	display: flex;
+	margin:auto;
+	position:fixed;
+	width:95%;
+	z-index:1000;
+	margin-top:-5%;
+}
+
+#logo
+{
+	background-image: url("images/entete.png");
+	flex: 2;
+	background-size: cover;
+}
+
+a
+{
+	text-decoration : none;
+}
+
+nav ul
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	font-family:frozito;
+	
+}
+
+nav li
+{
+	display:inline-block;
+	width:20%;
+	border: 1% solid #000000;
+	background-image:url("images/menu.png");
+	background-size: cover;
+	background-attachment:fixed;
+	background-position:center;
+	
+}
+
+nav
+{
+	flex: 8;
+	
+}
+
+nav li:hover
+{
+	background-size: cover;
+	background-image:url("images/hover.png");
+}
+
+nav li a
+{
+	
+	display:block;
+	text-decoration:none;
+	font-size:170%;
+	text-align:center;
+	padding: 5%;
+	margin: 1%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#1B6FBC), to(#FFFFFF));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sous
+{
+	display:none;
+	position:absolute;
+}
+
+.sous li
+{
+	float:none;
+	width:100%;
+	text-align:right;
+}
+
+.sous a
+{
+	padding:5%;
+	border-bottom:none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#1B6FBC), to(#FFFFFF));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sous li:hover
+{
+	border-bottom: none;
+	background-image:url("images/deroulant.png");
+	background-size:cover;
+}
+
+nav > ul li:hover .sous
+{
+	display:block;
+}
+
+.deroulant > a ::after
+{
+	content:url("images/deroulant.png");
+}
+
+#globale
+{	
+	
+	background:#B6CEFF;
+	background-image:url("images/article.png");
+	background-size:cover;
+	width:90%;
+	height:auto 100%;
+	margin-top:5%;
+	padding-top:5%;
+	padding-bottom:1%;
+	margin-bottom:2%;
+	margin-left:5%;
+	border-radius: 30% 30% 100px 100px;
+	-moz-box-shadow:    3px 3px 30px 30px #2bbcff;
+	-webkit-box-shadow: 3px 3px 30px 30px #2bbcff;
+	box-shadow:         3px 3px 30px 30px #2bbcff;
+}
+
+article
+{
+	width:75%;
+	margin-left:12%;
+	margin-bottom:5%;
+	background:rgba(255, 255, 255, 0.5);
+	border-radius: 50px 50px 50px 50px;
+	-moz-box-shadow:    3px 3px 5px 6px #99EAFF;
+	-webkit-box-shadow: 3px 3px 5px 6px #99EAFF;
+	box-shadow:         3px 3px 5px 6px #99EAFF;
+	font-size:120%;
+	line-height:200%;
+	font-family:'frozito';
+}
+
+#title
+{
+	text-decoration:underline;
+	font-size:320%;
+	font-family:flakes;
+	text-align:center;
+}
+
+@font-face
+{
+    font-family: 'flakes';
+    src: url('font/flakes.ttf');
+}
+
+@font-face
+{
+    font-family: frozito;
+    src: url('font/frozito.ttf');
+}
+
+table
+{
+	border: thin solid #000000;
+	width: 50%;
+	border-collapse: collapse;
+	text-align:center;
+}
+
+td, th
+{
+	width: 50%;
+	border-left:thin solid #000000;
+}
+
+a:hover{
+	text-decoration:underline;
+}

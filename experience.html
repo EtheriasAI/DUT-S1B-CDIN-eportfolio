@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>My e-portfolio</title>
+	
+	<link rel="icon" href="images/logo.png" />
+	
+	<link rel ="stylesheet" href="style.css" />
+	
+	<!-- Déclaration des feuilles de styles utilisés et du logo du site -->
+	
+</head>
+
+<body>
+
+	<!-- header contient le menu et le logo -->
+	<header>
+		<!-- logo du site à côté du menu -->
+		<div id="logo">
+
+		</div>
+	
+		<!-- menu du site -->
+		<nav>
+			<ul>
+				<li><a href="Index.html">Accueil</a></li><!--					
+				--><li><a href="competence.html">Compétence</a> </li><!--
+				--><li><a href="loisir.html">Loisir</a> </li><!--
+				--><li><a href="experience.html">Expérience</a> </li><!--
+				--><li class="deroulant"><a href="sources.html">Annexes</a>
+						<!-- menu deroulant -->
+						<ul class="sous">
+							<li><a href="sources.html">Sources</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</li>
+			</ul>
+		</nav>
+	
+	</header>
+	
+	<!-- globale contient la page avec les articles dessus -->
+	<div id="globale">
+		
+		<!-- présentation de mon expèrience -->
+		<div id="title"><p>Mes experiences</p></div>
+		
+		<!-- les balises article contiennent les articles et sont mis
+		de bout à bout sur la page sous forme de block -->
+		<article>
+
+			<!-- déplacer le texte à droite sans changer le css des balises article -->
+			<blockquote>
+			
+				<p>Je participe activement dans une association: la SPA.</p>
+
+				<p>Des milliers d'animaux attendent à la spa un nouveau foyer.</p>
+				
+				<p>Vous pouvez découvrir leur compte Instagram <a class="hover" href="https://www.instagram.com/la_spa/">ici.</a></p>
+				
+				<p>Ils postent souvent des posts où ils mettent souvent en avant un animal de la spa.</p>
+				
+				<p>Il existe plusieurs refuges de la spa en France, vous pouvez voir ceux en île-de-france:</p>
+				
+				<!-- Définition du css dans le html pour alléger le css et éviter des balises trop peu utilisées -->
+				<img src="images/map.png" alt="" style="width:60%;" />
+				
+				<p>Vous pouvez agir dès maintenant pour les animaux abandonnés ou maltraités.</p>
+				
+				<p>Il existe plusieurs manières, d'aider la SPA.</p>
+				
+				<p>Rendez-vous dès maintenant sur le site de la spa:<a class="hover" href="https://www.la-spa.fr/">https://www.la-spa.fr/</a></p>
+
+			</blockquote>
+
+		</article>
+		
+		<!-- petit saut de ligne sans changer le css des balises article -->
+		<br />
+		
+	</div>
+	
+	<!-- ancre -->
+	<a href="#"><img src="images/entete/part1.png" alt="" style="width:10%;float:right;" /></a>
+	
+</body>
+
+</html>
